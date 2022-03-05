@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=9,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b27db9b739.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <title>Dash</title>
+</head>
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+
+    <!-- INICIO MENU -->
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2>
+                <span class="lab la-accusoft"></span>
+                <span>ATHOS</span>
+            </h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li class="btn active">
+                    <a>
+                        <span class="las la-campground"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="btn">
+                    <a >
+                        <span class="lab la-telegram"></span>
+                        <span>API Telegram</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a onclick="document.querySelector('#modal01').style.display='flex'">
+                        <span class="lar la-edit"></span>
+                        <span >Editar perfil</span>
+                    </a>
+                </li>
+
+                <li class="btn">
+                    <a>
+                        <span class="las la-sign-out-alt"></span>
+                        <span>Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FIM MENU -->
+
+    <!-- INICIO MAIN -->
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars" style="cursor: pointer;"></span>
+                </label>
+                Dashboard
+            </h2>
+
+            <div class="user-wrapper">
+                <img src="./img/perfil-padrao.png" alt="perfil" width="40px" height="40px"/>
+                <div>
+                    <h4>Nickolas Siva</h4>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="dashboard cards">
+                <div class="card-single">
+                    <div>
+                        <h1>0000</h1>
+                        <span>Conectados <i class="las la-share-alt"></i></span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>0000</h1>
+                        <span>Usuários <i class="las la-user-alt"></i></i></span>
+                    </div>
+                    <div>
+                        <!-- <span class="las la-pencil-alt" onclick="document.querySelector('#modal02').style.display='flex'"></span> -->
+                        <!-- <span class="las la-plus-circle"></span> -->
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>0000</h1>
+                        <span>Atualizados <i class="las la-undo-alt"></i></span>
+                    </div>
+                    <div>
+                        <span class="las la-pencil-alt" onclick="document.querySelector('#modal03').style.display='flex'"></span>
+                        <!-- <span class="las la-plus-circle"></span> -->
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>0</h1>
+                        <span>Anúncios <i class="las la-bullhorn"></i></span>
+                    </div>
+                    <div>
+                        <span class="las la-plus-circle" onclick="document.querySelector('#modal04').style.display='flex'"></span> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h3>Recentes</h3>
+    
+                            <button>See all <span class="las la-arrow-right"></span></button>
+                        </div>
+    
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>CLIENTE</td>  
+                                            <td>DEPARTAMENTO</td>
+                                            <td>STATUS</td>    
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status desatualizado"></span>
+                                                desatualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status desatualizado"></span>
+                                                desatualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status desatualizado"></span>
+                                                desatualizado
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status desatualizado"></span>
+                                                desatualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status desatualizado"></span>
+                                                desatualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status desatualizado"></span>
+                                                desatualizado
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Cliente</td>
+                                            <td>THM SOLUÇÕES</td>
+                                            <td>
+                                                <span class="status atualizado"></span>
+                                                atualizado
+                                            </td>
+                                        </tr>
+        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="blur" id="modal01">
+        <div class="boxModal">
+            <span class="close" id="close" onclick="document.querySelector('#modal01')
+            .style.display='none'"><i class="las la-times"></i></span>
+            <div class="content">
+                <h3>Editar perfil</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="blur" id="modal02">
+        <div class="boxModal">
+            <span class="close" onclick="document.querySelector('#modal02')
+            .style.display='none'"><i class="las la-times"></i></span>
+            <div class="content">
+                <h3>Editar Usuários</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="blur" id="modal03">
+        <div class="boxModal">
+            <span class="close" onclick="document.querySelector('#modal03')
+            .style.display='none'"><i class="las la-times"></i></span>
+            <div class="content-att">
+                <div class="title">
+                    <i class="las la-pencil-alt" style="font-size: 2rem; color: var(--color-dark);"></i>
+                    <h3>Atualizados</h3>
+                </div>
+
+                <form action="">
+                    <label>
+                        <input type="number" placeholder="Cód. Cliente" id="codigo" autocomplete="none" autocapitalize="none" min="1" required />
+                        <input type="number" placeholder="Qnt. Licença" id="licenca" autocomplete="none" autocapitalize="none" min="1" required />
+                    </label>
+
+                    <input type="text" placeholder="Nome de cliente" id="nome" autocomplete="none" autocapitalize="none" required>
+
+                    <label>
+                        <input type="number" placeholder="Terminais Atualizados" id="terminal" min="1" autocomplete="none" autocapitalize="none" required />
+                        <input type="text" readonly value="3.0.76.40" style="cursor: no-drop; background: #f1f1f1;" />
+                    </label>
+
+                    <button type="submit">Editar</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="blur" id="modal04">
+        <div class="boxModal">
+            <span class="close" onclick="document.querySelector('#modal04')
+            .style.display='none'"><i class="las la-times"></i></span>
+
+            <div class="content-anuncio">
+                <div class="title">
+                    <i class="las la-plus-circle" style="font-size: 2rem; color: var(--color-dark);"></i>
+                    <h3>Anuncios</h3>
+                </div>
+
+                <form action="">
+
+                    <div class="interativo">
+                        
+                        <label for="first">
+                            <input type="checkbox" id="first" name="topo-esquerdo"/>
+                            <div class="color"><i class="las la-check"></i></div>
+                        </label>
+    
+                        <label for="second">
+                            <input type="checkbox" id="second" name="topo-direito"/>
+                            <div class="color"><i class="las la-check"></i></div>
+                        </label>
+                        <label for="third">
+                            <input type="checkbox" id="third" name="baixo-esquerdo"/>
+                            <div class="color"><i class="las la-check"></i></div>
+                        </label>
+                        <label for="fourth">
+                            <input type="checkbox" id="fourth" name="baixo-direito"/>
+                            <div class="color"><i class="las la-check"></i></div>
+                        </label>
+                        <label>
+                            <h4>ATHOS</h4>
+                        </label>
+                        
+                    </div>
+                    <button type="submit">Adicionar</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
